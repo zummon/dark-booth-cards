@@ -1,0 +1,9 @@
+{
+	"license": "MIT",
+	"scripts": {
+		"start": "npx tailwindcss -i ./src/input.css -o ./docs/output.css --watch"
+	},
+	"devDependencies": {
+		"tailwindcss": "^3.3.3"
+	}
+}
