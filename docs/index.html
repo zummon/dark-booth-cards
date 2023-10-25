@@ -209,7 +209,19 @@
 	</div>
 </div>
 
+<script>
+	var toggleEl = document.querySelector("#set-dark");
 
-<script src="/script.js"></script>
+	function handle(isDark) {
+		document.documentElement.className = isDark ? "dark" : "";
+	}
+
+	toggleEl.addEventListener("change", function (event) {
+		handle(event.target.checked);
+	});
+
+	handle(toggleEl.checked);
+</script>
+
 </body>
 </html>
